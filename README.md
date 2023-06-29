@@ -149,8 +149,11 @@ Exécuter la commande suivante pour vérifier l’état du service :
 
 Pour tester la connexion de pod telnet au pod postgresql vous entrez au conteneur telnet et vous testez la connexion :
 
-vous vérifiez les adresses ip des pods posgresql d'abord: ![image](https://github.com/Islem99/telnet-kubernetes/assets/84632827/579d9a46-35d8-49cd-9cfc-b2f7a4ff06db)
+vous vérifiez les adresses ip des pods posgresql d'abord: 
 
+![image](https://github.com/Islem99/telnet-kubernetes/assets/84632827/579d9a46-35d8-49cd-9cfc-b2f7a4ff06db)
+
+Puis vous testez la connexion: 
 
 ![telnet-test](https://github.com/Islem99/telnet-kubernetes/assets/84632827/4c23f8b9-c886-4e44-9c22-fa87ab291d97)
 
