@@ -80,3 +80,9 @@ spec:
 
 ```
 
+ Création d'un déploiement sur Kubernetes basé sur le fichier YAML spécifié.
+ 
+ > kubectl apply -f telnet-deployment.yaml
+
+
+ 
