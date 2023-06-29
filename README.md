@@ -120,4 +120,5 @@ Exécuter la commande suivante pour vérifier l’état du service :
 > kubectl get services
 
 
+
  
