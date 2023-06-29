@@ -28,7 +28,12 @@ Faire un build pour construire l'image Docker "telnet-server" en utilisant cette
 
 > docker build -t telnet-server .
 
-Attendez que l’image soit correctement construite.
+Attendez que l’image soit correctement construite et vérifiez la construction de l'image en utilisant la commande suivante:
+
+> docker images
+
+![build](https://github.com/Islem99/telnet-kubernetes/assets/84632827/fb990b2d-1e77-4358-9224-b3fdc8033f27)
+
 
 3 ème étape: Faire un "push" de l'image du Docker dans un registre de conteneurs dans notre cas Docker Hub
 
