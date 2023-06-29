@@ -28,7 +28,8 @@ Avant de déployer l’image à Kubernetes, vous devez le pousser à un registre
 
   *Identifiez l’image Docker avec le nom de registre et de dépôt souhaité en utilisant la commande suivante:
   
-  >docker push your-registry/your-repository:tag
+  > docker tag telnet-server your-registry/your-repository
 
-  Dans notre cas : > docker tag telnet-server islem1999/telnet-server
+  Dans notre cas : 
+  > docker tag telnet-server islem1999/telnet-server
 
