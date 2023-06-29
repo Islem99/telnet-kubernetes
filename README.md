@@ -12,3 +12,10 @@ Ajoutez le contenu suivant au fichier "Dockerfile"
 > RUN apt-get update && apt-get install -y telnet
 
 > CMD ["/bin/bash"]
+
+Enregistrer Dockerfile.
+
+2 ème étape:
+Faire un build pour construire l'image Docker "telnet-server" en utilisant cette commande:
+
+> docker build -t telnet-server .
