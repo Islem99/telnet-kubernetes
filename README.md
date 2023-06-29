@@ -33,6 +33,14 @@ Avant de déployer l’image à Kubernetes, vous devez le pousser à un registre
   Dans notre cas : 
   > docker tag telnet-server islem1999/telnet-server
 
+*Exécuter un conteneur Docker nommé "telnetcontainer" basé sur l'image "telnet-server:latest" en utilisnat:
+
+>docker container run -d -it --name container-name your-image:latest
+
+Dans notre cas:
+
+> docker container run -d -it --name telnetcontainer telnet-server:latest
+
 Vérifier si le conteneur est créé en utilisant:
 
 > docker ps
@@ -41,4 +49,23 @@ Vérifier si le conteneur est créé en utilisant:
 
 Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant :
 
+>apiVersion: apps/v1
+>kind: Deployment
+>metadata:
+  >name: telnet-deployment
+>spec:
+  >replicas: 1
+  >selector:
+   > matchLabels:
+      >app: telnet-server
+  >template:
+    >metadata:
+      >labels:
+        >app: telnet-server
+    >spec:
+      >containers:
+      >- name: telnet-server
+        >image: islem1999/telnet-server:latest
+        >ports:
+        >- containerPort: 23
 
