@@ -72,6 +72,9 @@ Dans notre cas:
 
 > docker container run -d -it --name telnetcontainer telnet-server:latest
 
+![run](https://github.com/Islem99/telnet-kubernetes/assets/84632827/ed6d66db-487a-4fa1-b466-227d4ba9a1da)
+
+
 Vérifier si le conteneur est créé en utilisant:
 
 > docker ps
