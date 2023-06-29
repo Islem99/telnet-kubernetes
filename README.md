@@ -74,7 +74,7 @@ spec:
     spec:
       containers:
       - name: telnet-server
-        image: <your-registry/your-repository:tag>  /*Dans notre cas : islem1999/telnet-server:latest*/  <!-- TO DO: add more details about me later -->
+        image: <your-registry/your-repository:tag>   <!-- Dans notre cas : islem1999/telnet-server:latest -->
         ports:
         - containerPort: 23
 
