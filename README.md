@@ -47,9 +47,9 @@ Vérifier si le conteneur est créé en utilisant:
 
 4 ème étape: Déployer l’image Docker sur Kubernetes :
 
-Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant: '''git init'''
+Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant: ```git init```
 
-'''
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -70,5 +70,5 @@ spec:
         ports:
         - containerPort: 23
 
-    '''
+```
 
