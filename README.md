@@ -7,6 +7,14 @@ Un pod postgresql : Dans notre cas nous avons utilisé les pods postgresql dépl
 1 ère étape: La création de Dockerfile
 Ajoutez le contenu suivant au fichier "Dockerfile"
 
+```
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y telnet
+
+CMD ["/bin/bash"]
+```
+
 > FROM ubuntu:latest
 
 > RUN apt-get update && apt-get install -y telnet
@@ -47,7 +55,7 @@ Vérifier si le conteneur est créé en utilisant:
 
 4 ème étape: Déployer l’image Docker sur Kubernetes :
 
-Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant: ```git init```
+Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant: 
 
 ```
 apiVersion: apps/v1
