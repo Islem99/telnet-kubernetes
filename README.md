@@ -19,3 +19,15 @@ Enregistrer Dockerfile.
 Faire un build pour construire l'image Docker "telnet-server" en utilisant cette commande:
 
 > docker build -t telnet-server .
+
+Attendez que l’image soit correctement construite.
+
+3 ème étape: Faire un "push" de l'image du Docker dans un registre de conteneurs dans notre cas Docker Hub
+
+Avant de déployer l’image à Kubernetes, vous devez le pousser à un registre de conteneurs.
+
+  *Identifiez l’image Docker avec le nom de registre et de dépôt souhaité en utilisant la commande suivante:
+  
+  >docker push your-registry/your-repository:tag
+  Dans notre cas : > docker tag telnet-server islem1999/telnet-server
+
