@@ -107,5 +107,17 @@ spec:
   type: ClusterIP
 ```
 
+Appliquer le service à Kubernetes:
+
+Exécutez la commande suivante pour appliquer le service à votre cluster Kubernetes :
+
+> kubectl apply -f telnet-service.yaml
+
+Vérifier le service :
+
+Exécuter la commande suivante pour vérifier l’état du service :
+
+> kubectl get services
+
 
  
