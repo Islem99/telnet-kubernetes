@@ -36,6 +36,12 @@ Attendez que l’image soit correctement construite et vérifiez la construction
 
 ![image](https://github.com/Islem99/telnet-kubernetes/assets/84632827/568d7ffa-05a1-4b49-9271-c439359a712f)
 
+3 ème étape : Authentification au compte Docker en utlisant la commande:
+
+> docker login
+
+![login](https://github.com/Islem99/telnet-kubernetes/assets/84632827/694dcd38-688d-4200-af58-e2239a5b56e9)
+
 
 3 ème étape: Faire un "push" de l'image du Docker dans un registre de conteneurs dans notre cas Docker Hub
 
