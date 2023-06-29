@@ -84,5 +84,28 @@ spec:
  
  > kubectl apply -f telnet-deployment.yaml
 
+Vérification de l'état de pod:
+
+> kubectl get pod
+
+5 ème étape : Exposer le service Telnet :
+
+Créer un fichier YAML de service (par exemple telnet-service.yaml) avec le contenu suivant :
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: telnet-service
+spec:
+  selector:
+    app: telnet-app
+  ports:
+    - protocol: TCP
+      port: 23
+      targetPort: 23
+  type: ClusterIP
+```
+
 
  
