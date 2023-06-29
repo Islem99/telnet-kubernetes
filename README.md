@@ -49,23 +49,26 @@ Vérifier si le conteneur est créé en utilisant:
 
 Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant :
 
->apiVersion: apps/v1
->kind: Deployment
->metadata:
-  >name: telnet-deployment
->spec:
-  >replicas: 1
-  >selector:
-   > matchLabels:
-      >app: telnet-server
-  >template:
-    >metadata:
-      >labels:
-        >app: telnet-server
-    >spec:
-      >containers:
-      >- name: telnet-server
-        >image: islem1999/telnet-server:latest
-        >ports:
-        >- containerPort: 23
+'''
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telnet-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: telnet-server
+  template:
+    metadata:
+      labels:
+        app: telnet-server
+    spec:
+      containers:
+      - name: telnet-server
+        image: islem1999/telnet-server:latest
+        ports:
+        - containerPort: 23
+
+    '''
 
