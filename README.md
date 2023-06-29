@@ -7,8 +7,8 @@ Un pod postgresql : Dans notre cas nous avons utilisé les pods postgresql dépl
 1 ère étape: La création de Dockerfile
 Ajoutez le contenu suivant au fichier "Dockerfile"
 
-FROM ubuntu:latest
+> FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y telnet
+> RUN apt-get update && apt-get install -y telnet
 
-CMD ["/bin/bash"]
+> CMD ["/bin/bash"]
