@@ -46,6 +46,12 @@ Avant de déployer l’image à Kubernetes, vous devez le pousser à un registre
   Dans notre cas : 
   > docker tag telnet-server islem1999/telnet-server
 
+*Faire un "push" de l'image du Docker dans Docker Hub en utilisant:
+
+
+![image](https://github.com/Islem99/telnet-kubernetes/assets/84632827/21e42230-6167-4556-9956-0b74eacb5e11)
+
+
 *Exécuter un conteneur Docker nommé "telnetcontainer" basé sur l'image "telnet-server:latest" en utilisnat:
 
 >docker container run -d -it --name container-name your-image:latest
