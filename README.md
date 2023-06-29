@@ -33,3 +33,12 @@ Avant de déployer l’image à Kubernetes, vous devez le pousser à un registre
   Dans notre cas : 
   > docker tag telnet-server islem1999/telnet-server
 
+Vérifier si le conteneur est créé en utilisant:
+
+> docker ps
+
+4 ème étape: Déployer l’image Docker sur Kubernetes :
+
+Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant :
+
+
