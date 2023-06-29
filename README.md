@@ -114,6 +114,8 @@ Vérification de l'état de pod:
 
 > kubectl get pod
 
+![final](https://github.com/Islem99/telnet-kubernetes/assets/84632827/6b6c1559-3b37-490c-b464-76b117c86575)
+
 6 ème étape : Exposer le service Telnet :
 
 Créer un fichier YAML de service (par exemple telnet-service.yaml) avec le contenu suivant :
@@ -144,6 +146,11 @@ Vérifier le service :
 Exécuter la commande suivante pour vérifier l’état du service :
 
 > kubectl get services
+
+Pour tester la connexion de pod telnet au pod postgresql vous entrez au conteneur telnet et vous testez la connexion comme il est illustré dans la figure ci-dessous:
+
+![telnet-test](https://github.com/Islem99/telnet-kubernetes/assets/84632827/4c23f8b9-c886-4e44-9c22-fa87ab291d97)
+
 
 
 
