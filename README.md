@@ -43,7 +43,7 @@ Attendez que l’image soit correctement construite et vérifiez la construction
 ![login](https://github.com/Islem99/telnet-kubernetes/assets/84632827/694dcd38-688d-4200-af58-e2239a5b56e9)
 
 
-3 ème étape: Faire un "push" de l'image du Docker dans un registre de conteneurs dans notre cas Docker Hub
+4 ème étape: Faire un "push" de l'image du Docker dans un registre de conteneurs dans notre cas Docker Hub
 
 Avant de déployer l’image à Kubernetes, vous devez le pousser à un registre de conteneurs.
 
@@ -79,7 +79,7 @@ Vérifier si le conteneur est créé en utilisant:
 
 > docker ps
 
-4 ème étape: Déployer l’image Docker sur Kubernetes :
+5 ème étape: Déployer l’image Docker sur Kubernetes :
 
 Créer un fichier YAML de déploiement Kubernetes (par exemple, telnet-deployment.yaml) avec le contenu suivant: 
 
@@ -114,7 +114,7 @@ Vérification de l'état de pod:
 
 > kubectl get pod
 
-5 ème étape : Exposer le service Telnet :
+6 ème étape : Exposer le service Telnet :
 
 Créer un fichier YAML de service (par exemple telnet-service.yaml) avec le contenu suivant :
 
