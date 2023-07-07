@@ -6,7 +6,7 @@ Un pod postgresql : Dans notre cas nous avons utilisé les pods postgresql dépl
 
 ###Avant d'éxécuter le script "telnet-deployment.sh" changer le nom d'utilisateur et le mot de passe de votre compte "Docker Hub"
 
-docker login -u <username> -p <password> docker.io
+docker login -u [username] -p [password] docker.io
 
 #1 ère étape: La création de Dockerfile
 Ajoutez le contenu suivant au fichier "Dockerfile"
