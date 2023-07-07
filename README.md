@@ -3,7 +3,7 @@
 Prérequis:
 -Cluster Kubernetes : Dans notre cas nous avons déployé un cluster localement à l'aide de Minikube.
 
--Un pod postgresql : Dans notre cas nous avons utilisé les pods postgresql déployés sur Kubernetes (pour voir le déploiement de conteneur posgresql sur Kubenetes suivez cette repository > https://github.com/Islem99/postgresql-kubernetes)
+-Un pod postgresql : Dans notre cas nous avons utilisé les pods postgresql déployés sur Kubernetes (pour voir le déploiement de conteneur posgresql sur Kubenetes suivez cette repository  https://github.com/Islem99/postgresql-kubernetes   )
 
 ###Avant d'éxécuter le script "telnet-deployment.sh" changer le nom d'utilisateur et le mot de passe de votre compte "Docker Hub"
 
