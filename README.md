@@ -92,17 +92,20 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: telnet-server
+      app: telnet
   template:
     metadata:
       labels:
-        app: telnet-server
+        app: telnet
     spec:
       containers:
-      - name: telnet-server
-        image: <your-registry/your-repository:tag>   <!-- Dans notre cas : islem1999/telnet-server:latest -->
-        ports:
-        - containerPort: 23
+        - name: telnet-container
+          image: islem1999/telnet-pod:latest
+          ports:
+            - containerPort: 23
+          command: ["sleep"]
+          args: ["infinity"]
+
 
 ```
 
